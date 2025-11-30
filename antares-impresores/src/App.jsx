@@ -3,6 +3,7 @@ import Encabezado from "./Paginas/Encabezado";
 import Pie from "./Paginas/Pie";
 import Nosotros from "./Paginas/Nosotros";
 import "./App.css";
+import Talleres from "./Paginas/Talleres";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<h1>Bienvenido</h1>} />
             <Route path="/Nosotros" element={<Nosotros />} />
+            <Route path="/Talleres" element={<Talleres />} />
           </Routes>
         </main>
 
