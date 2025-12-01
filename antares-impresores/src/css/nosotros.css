@@ -1,0 +1,123 @@
+.container {
+  max-width: 1440px;
+}
+
+
+ /* TEXTO  */
+.tituloPoppins {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;       
+}
+
+.textoPoppins p{
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*------------------------------*/
+
+
+.contenedorDerecha {
+  display: flex;
+  flex-direction: row; /* Fila (uno al costado del otro) */
+  justify-content: flex-end; /* Toda la fila hacia la derecha */
+  gap: 20px;
+  padding: 50px !important;
+}
+
+.contenedorIzquierda {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start; /* ESTE ES EL QUE FALTABA */
+  gap: 20px;
+  padding: 50px !important;
+}
+
+
+
+.borderradius10px {
+  border-radius: 10px; 
+}
+
+.QueSomos {
+  border-radius: 15px;
+  padding: 20px;
+  background: #ffffff;
+  border: 2px solid #00eaff;
+  animation: neonGlow 2s infinite alternate;
+}
+
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: 
+      0 0 5px #00eaff,
+      0 0 0px #00eaff,
+      0 0 5px #00eaff;
+  }
+  100% {
+    box-shadow: 
+      0 0 15px #00eaff,
+      0 0 20px #00eaff,
+      0 0 35px #00eaff;
+  }
+}
+
+
+
+
+.mi-caja-QueSomos {
+  width: 30%;
+  height: 250px;
+  background-image: url("https://i.pinimg.com/736x/16/2d/a4/162da4da660f69ef8fa7851b3d6445b1.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  border-radius: 10px;
+
+  /*Mover un poquito hacia abajo:*/
+  background-position: center 0px !important;
+
+  /*Mover un poquito hacia arriba:*/
+  background-position: center 0px;
+
+  /*Mover un poquito hacia la derecha:*/
+  background-position: 0px center !important;
+
+  /*Mover un poquito hacia la izquierda:*/
+  background-position: 0px center;
+
+  background-position: 52% 47%;
+}
+
+.mi-caja-QueHacemos {
+  width: 30%;
+  height: 250px;
+  background-image: url("https://i.pinimg.com/736x/84/5e/cd/845ecdb22175e3c850c3236109c14c8a.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  border-radius: 10px;
+
+  /*Mover un poquito hacia abajo:*/
+  background-position: center 0px !important;
+
+  /*Mover un poquito hacia arriba:*/
+  background-position: center 0px;
+
+  /*Mover un poquito hacia la derecha:*/
+  background-position: 0px center !important;
+
+  /*Mover un poquito hacia la izquierda:*/
+  background-position: 0px center;
+
+  background-position: 52% 47%;
+}
