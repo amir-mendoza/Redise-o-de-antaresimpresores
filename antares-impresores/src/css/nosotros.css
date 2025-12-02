@@ -13,14 +13,20 @@
   letter-spacing: 2px;       
 }
 
-.textoPoppins p{
+.textoPoppins p, ul{
   font-family: 'Poppins', sans-serif;
   text-align: justify;
   color: black;
   font-size: 16px;
   font-weight: 400;
 }
-
+.textoPoppins{
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: black;
+  
+}
 /*------------------------------*/
 
 
@@ -120,4 +126,381 @@
   background-position: 0px center;
 
   background-position: 52% 47%;
+}
+
+
+/* ============================= */
+/*       RESPONSIVE TABLET       */
+/* ============================= */
+@media (max-width: 1024px) {
+  .contenedorDerecha,
+  .contenedorIzquierda {
+    width: 100% !important;
+    height: auto !important;
+    padding: 30px !important;
+    gap: 20px;
+  }
+
+  .textoPoppins {
+    width: 100% !important;
+  }
+
+  .tituloPoppins {
+    font-size: 22px;
+  }
+
+  .textoPoppins p {
+    font-size: 15px;
+  }
+
+  .mi-caja-QueSomos,
+  .mi-caja-QueHacemos {
+    width: 40% !important;
+    height: 200px !important;
+  }
+}
+
+/* ============================= */
+/*        RESPONSIVE MÓVIL       */
+/* ============================= */
+@media (max-width: 768px) {
+
+  .contenedorDerecha,
+  .contenedorIzquierda {
+    flex-direction: column !important;   
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 20px !important;
+    gap: 20px !important;
+  }
+
+
+  .mi-caja-QueSomos,
+  .mi-caja-QueHacemos {
+    width: 90% !important;
+    height: 200px !important;
+    order: -1; 
+  }
+
+  .textoPoppins {
+    width: 100% !important;
+    text-align: justify;
+  }
+
+  .tituloPoppins {
+    font-size: 20px;
+  }
+
+  .textoPoppins p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+
+.tarjeta-hover {
+  transition: all 0.3s ease;
+}
+
+.tarjeta-hover:hover {
+  box-shadow: 
+      0 0 10px #0da40de8,
+      0 0 10px #0da40de8,
+      0 0 25px #0da40de8;
+  transform: translateY(-10px); /* se eleva */
+}
+
+
+.ASESORAMIENTO-PERSONALIZADO {
+  width: 120px;
+  height: 120px;
+  background-image: url("https://static.wixstatic.com/media/3379ea_cd31f384320644ccb54fde6d11eb1d2f~mv2.png/v1/fill/w_238,h_206,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ICONO%20ASESORAMIENTO%20ANTARES-04.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.STOCKS-DE-SEGURIDAD {
+  width: 120px;
+  height: 120px;
+  background-image: url("https://static.wixstatic.com/media/3379ea_410c58e7c5b64a9ca8222a2931b814c3~mv2.png/v1/fill/w_238,h_206,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ICONO%20STOCK%20ANTARES-02.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.PRECIOS-COMPETITIVOS {
+  width: 120px;
+  height: 120px;
+  background-image: url("https://static.wixstatic.com/media/3379ea_c3c41ceac7be484fb98f62c3498b8f3e~mv2.png/v1/fill/w_238,h_206,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ICONO%20PRECIOS%20COORPORATIVOSANTARES-03.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.FACILIDADES-DE-PAGO {
+  width: 120px;
+  height: 120px;
+  background-image: url("https://static.wixstatic.com/media/3379ea_664560f1f0c8464f81b73c9712de6ce5~mv2.png/v1/fill/w_218,h_196,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ICONO%20TARJETA%20ANTARES_Mesa%20de%20trabajo%201.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ATENCIÓN-A-NIVEL-NACIONAL {
+  width: 120px;
+  height: 120px;
+  background-image: url("https://static.wixstatic.com/media/3379ea_3e11f32f3bf440c6ab90e5b4ee907e87~mv2.png/v1/fill/w_196,h_286,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ICONO%20PERU%20-%20ANTARES-08.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Acordeón colores Antares */
+.accordion-button {
+  background-color: #f5faff !important;
+  color: #00418B !important;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d6ebff !important;
+  color: #00418B !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border: 1px solid #f0cdcd;
+  border-radius: 12px !important;
+  margin-bottom: 10px;
+}
+
+.accordion-body {
+  background-color: white;
+  color: #002e63;
+}
+
+
+/* ---------------------------------------------- */
+/* ACLARACIÓN: Mantengo tus estilos originales    */
+/* ---------------------------------------------- */
+
+.mi-caja-Soluciones {
+  width: 40%;
+  height: 770px;
+  background-image: url("https://i.pinimg.com/736x/0f/47/9b/0f479b6baa1f2129ae4566b7ddbb4445.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* Contenedor padre */
+.padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ICONOS */
+.ASESORAMIENTO-PERSONALIZADO,
+.STOCKS-DE-SEGURIDAD,
+.PRECIOS-COMPETITIVOS,
+.FACILIDADES-DE-PAGO,
+.ATENCIÓN-A-NIVEL-NACIONAL {
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilos acordeón colores */
+.accordion-button {
+  background-color: #f5faff !important;
+  color: #00418B !important;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d6ebff !important;
+  color: #00418B !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border: 1px solid #f0cdcd;
+  border-radius: 12px !important;
+  margin-bottom: 10px;
+}
+
+.accordion-body {
+  background-color: white;
+  color: #002e63;
+}
+
+/* ---------------------------------------------------- */
+/*                 🔥 RESPONSIVE 🔥                      */
+/* ---------------------------------------------------- */
+
+/* Tablets (menos de 992px) */
+@media (max-width: 992px) {
+  .padre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mi-caja-Soluciones {
+    width: 90%;
+    height: 400px;
+  }
+
+  .accordion-button span {
+    font-size: 16px;
+  }
+}
+
+/* Celulares (menos de 768px) */
+@media (max-width: 768px) {
+  .mi-caja-Soluciones {
+    width: 100%;
+    height: 300px;
+  }
+
+  .accordion {
+    width: 100% !important;
+  }
+
+  .padre {
+    gap: 20px;
+  }
+
+  /* Iconos más pequeños */
+  .ASESORAMIENTO-PERSONALIZADO,
+  .STOCKS-DE-SEGURIDAD,
+  .PRECIOS-COMPETITIVOS,
+  .FACILIDADES-DE-PAGO,
+  .ATENCIÓN-A-NIVEL-NACIONAL {
+    width: 80px;
+    height: 80px;
+  }
+
+  .accordion-button span {
+    font-size: 14px !important;
+  }
+}
+
+/* ---------------------------------------------- */
+/* ACLARACIÓN: Mantengo tus estilos originales    */
+/* ---------------------------------------------- */
+
+.mi-caja-Soluciones {
+  width: 40%;
+  height: 770px;
+  background-image: url("https://i.pinimg.com/736x/0f/47/9b/0f479b6baa1f2129ae4566b7ddbb4445.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* Contenedor padre */
+.padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ICONOS */
+.ASESORAMIENTO-PERSONALIZADO,
+.STOCKS-DE-SEGURIDAD,
+.PRECIOS-COMPETITIVOS,
+.FACILIDADES-DE-PAGO,
+.ATENCIÓN-A-NIVEL-NACIONAL {
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilos acordeón colores */
+.accordion-button {
+  background-color: #f5faff !important;
+  color: #00418B !important;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d6ebff !important;
+  color: #00418B !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border: 1px solid #f0cdcd;
+  border-radius: 12px !important;
+  margin-bottom: 10px;
+}
+
+.accordion-body {
+  background-color: white;
+  color: #002e63;
+}
+
+/* ---------------------------------------------------- */
+/*                 🔥 RESPONSIVE 🔥                      */
+/* ---------------------------------------------------- */
+
+/* Tablets (menos de 992px) */
+@media (max-width: 992px) {
+  .padre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mi-caja-Soluciones {
+    width: 90%;
+    height: 400px;
+  }
+
+  .accordion-button span {
+    font-size: 16px;
+  }
+}
+
+/* Celulares (menos de 768px) */
+@media (max-width: 768px) {
+  .mi-caja-Soluciones {
+    width: 100%;
+    height: 300px;
+  }
+
+  .accordion {
+    width: 100% !important;
+  }
+
+  .padre {
+    gap: 20px;
+  }
+
+  /* Iconos más pequeños */
+  .ASESORAMIENTO-PERSONALIZADO,
+  .STOCKS-DE-SEGURIDAD,
+  .PRECIOS-COMPETITIVOS,
+  .FACILIDADES-DE-PAGO,
+  .ATENCIÓN-A-NIVEL-NACIONAL {
+    width: 80px;
+    height: 80px;
+  }
+
+  .accordion-button span {
+    font-size: 14px !important;
+  }
 }
