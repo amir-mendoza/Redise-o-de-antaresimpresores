@@ -1,0 +1,118 @@
+.preguntas-section {
+  background: #f8f9fa;
+}
+
+/* Contenedor del accordion centrado */
+.faq-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de cada pregunta */
+.faq-item {
+  border: 2px solid #1973B0;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease; /* Transición suave para hover */
+}
+
+/* Efecto de elevación al pasar el mouse */
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(25, 115, 176, 0.25);
+}
+
+/* Botón de la pregunta (header del accordion) */
+.faq-accordion .accordion-button {
+  background: white;
+  color: #1973B0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 20px 25px;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+/* Cuando el accordion está expandido */
+.faq-accordion .accordion-button:not(.collapsed) {
+  background: #1973B0;
+  color: white;
+}
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Icono de la pregunta */
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Animación de rotación cuando se expande */
+.accordion-button:not(.collapsed) .faq-icon {
+  animation: rotateIcon 0.5s ease;
+}
+
+/* Keyframe: gira el icono 360° */
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.faq-question {
+  flex: 1;
+  text-align: left;
+}
+
+/* Flecha del accordion (cerrado - azul) */
+.faq-accordion .accordion-button::after {
+  transition: transform 0.3s ease;
+}
+
+/* Flecha del accordion (abierto - blanca y rotada) */
+.faq-accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+}
+
+/* Contenido de la respuesta */
+.faq-accordion .accordion-body {
+  padding: 25px 30px;
+  background: #f8f9fa;
+  color: #6c757d;
+  line-height: 1.8;
+  text-align: justify;
+  border-top: 2px solid rgba(25, 115, 176, 0.1);
+}
+
+/* Responsive tablets */
+@media (max-width: 768px) {
+  .faq-accordion .accordion-button {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+
+  .faq-icon {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsive móviles */
+@media (max-width: 576px) {
+  .faq-accordion .accordion-button {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+
+  .faq-icon {
+    font-size: 1.2rem;
+  }
+}
