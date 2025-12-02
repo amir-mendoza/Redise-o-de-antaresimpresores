@@ -4,6 +4,7 @@ import Pie from "./Paginas/Pie";
 import Nosotros from "./Paginas/Nosotros";
 import "./App.css";
 import Talleres from "./Paginas/Talleres";
+import Preguntas from "./Paginas/Preguntas";
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
         <Encabezado />
 
 
-        <main className="main-content" style={{backgroundColor: "#f0f0f0", padding: "20px"}}>
+        <main className="main-content" style={{ backgroundColor: "#f0f0f0", padding: "20px" }}>
           <Routes>
             <Route path="/" element={<h1>Bienvenido</h1>} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Talleres" element={<Talleres />} />
+            <Route path="/Preguntas" element={<Preguntas />} />
           </Routes>
         </main>
 
