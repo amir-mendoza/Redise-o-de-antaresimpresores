@@ -4,11 +4,9 @@ import Pie from "./Paginas/Pie";
 import Nosotros from "./Paginas/Nosotros";
 import "./App.css";
 import Talleres from "./Paginas/Talleres";
-<<<<<<< HEAD
 import Ecologicos from "./Paginas/ecologicos";
-=======
 import Preguntas from "./Paginas/Preguntas";
->>>>>>> 960f38538592cec8ab4744a43799d53a0f66086e
+
 
 function App() {
   return (
@@ -23,11 +21,8 @@ function App() {
             <Route path="/" element={<h1>Bienvenido</h1>} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Talleres" element={<Talleres />} />
-<<<<<<< HEAD
             <Route path="/Ecologicos" element={<Ecologicos />} />
-=======
             <Route path="/Preguntas" element={<Preguntas />} />
->>>>>>> 960f38538592cec8ab4744a43799d53a0f66086e
           </Routes>
         </main>
 
