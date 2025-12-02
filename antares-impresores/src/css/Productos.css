@@ -1,0 +1,341 @@
+.productos-servicios {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado principal */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main-title {
+  color: #00418B;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.title-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #166332;
+  margin: 0 auto;
+}
+
+/* Secciones de servicios */
+.service-section {
+  margin-bottom: 80px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.service-section:hover {
+  transform: translateY(-5px);
+}
+
+.service-section.alternate {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+}
+
+.service-content.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Texto del servicio */
+.service-text {
+  flex: 1;
+  padding: 40px;
+}
+
+.service-title {
+  color: #166332;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.service-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #166332;
+}
+
+.service-description {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Lista de características */
+.service-features {
+  margin-top: 25px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.feature-item {
+  color: #00559B;
+  font-size: 1rem;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.feature-item:hover {
+  color: #00418B;
+}
+
+.feature-icon {
+  color: #166332;
+  margin-right: 12px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Imágenes del servicio */
+.service-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.responsive-image:hover {
+  transform: scale(1.02);
+}
+
+/* Estilo específico para la imagen de gigantografías */
+.gigantografia-img {
+  max-height: 450px;
+  object-position: center;
+  border: 1px solid #e0e0e0;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .productos-servicios {
+    padding: 40px 15px;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+  }
+  
+  .service-content {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .service-content.reverse {
+    flex-direction: column;
+  }
+  
+  .service-text {
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .service-image {
+    padding: 20px 30px 30px;
+    width: 100%;
+  }
+  
+  .features-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .responsive-image {
+    max-height: 350px;
+  }
+  
+  .gigantografia-img {
+    max-height: 400px;
+  }
+}
+
+/* Tablets pequeñas y móviles grandes (576px - 767px) */
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 1.8rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+  }
+  
+  .features-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .feature-item {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+  
+  .service-section {
+    margin-bottom: 50px;
+  }
+  
+  .responsive-image {
+    max-height: 300px;
+  }
+  
+  .gigantografia-img {
+    max-height: 350px;
+  }
+}
+
+/* Móviles (hasta 575px) */
+@media (max-width: 575px) {
+  .productos-servicios {
+    padding: 30px 10px;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .main-title {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .service-text {
+    padding: 20px;
+  }
+  
+  .service-image {
+    padding: 15px 20px 20px;
+  }
+  
+  .service-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .feature-item {
+    font-size: 0.9rem;
+  }
+  
+  .responsive-image {
+    max-height: 250px;
+  }
+  
+  .gigantografia-img {
+    max-height: 280px;
+  }
+}
+
+/* Móviles muy pequeños (hasta 375px) */
+@media (max-width: 375px) {
+  .main-title {
+    font-size: 1.4rem;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+  }
+  
+  .service-text, 
+  .service-image {
+    padding: 15px;
+  }
+  
+  .feature-item {
+    font-size: 0.85rem;
+  }
+  
+  .responsive-image {
+    max-height: 220px;
+  }
+  
+  .gigantografia-img {
+    max-height: 240px;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-section {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.service-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.service-section:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.service-section:nth-child(4) {
+  animation-delay: 0.6s;
+}
