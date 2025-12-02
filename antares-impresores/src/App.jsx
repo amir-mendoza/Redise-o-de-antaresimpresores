@@ -4,6 +4,7 @@ import Pie from "./Paginas/Pie";
 import Nosotros from "./Paginas/Nosotros";
 import "./App.css";
 import Talleres from "./Paginas/Talleres";
+import Ecologicos from "./Paginas/ecologicos";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<h1>Bienvenido</h1>} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Talleres" element={<Talleres />} />
+            <Route path="/Ecologicos" element={<Ecologicos />} />
           </Routes>
         </main>
 
