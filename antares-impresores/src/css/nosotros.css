@@ -285,9 +285,10 @@
 }
 
 
-/* ---------------------------------------------- */
-/* ACLARACIÓN: Mantengo tus estilos originales    */
-/* ---------------------------------------------- */
+
+
+
+
 
 .mi-caja-Soluciones {
   width: 40%;
@@ -344,9 +345,11 @@
   color: #002e63;
 }
 
-/* ---------------------------------------------------- */
-/*                 🔥 RESPONSIVE 🔥                      */
-/* ---------------------------------------------------- */
+
+
+
+
+
 
 /* Tablets (menos de 992px) */
 @media (max-width: 992px) {
@@ -395,9 +398,11 @@
   }
 }
 
-/* ---------------------------------------------- */
-/* ACLARACIÓN: Mantengo tus estilos originales    */
-/* ---------------------------------------------- */
+
+
+
+
+
 
 .mi-caja-Soluciones {
   width: 40%;
@@ -709,3 +714,147 @@
     font-size: 18px; /* reducir tamaño del texto */
   }
 }
+
+
+
+
+
+/* ==========================================================
+   CONTACTO – DISEÑO + RESPONSIVE + ANIMACIONES
+   ========================================================== */
+
+/* Contenedor padre con máximo ancho */
+.contacto-padre {
+  max-width: 1440px !important;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Caja principal */
+.contacto-contenedor {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0px 0px 20px #0002, 0px 0px 10px #33c2d2, 0px 0px 20px rgb(19, 200, 220);
+
+  /* Animación suave */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 0.8s ease forwards;
+}
+
+/* Animación principal */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Textos */
+.contacto-izquierda p,
+.contacto-izquierda a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+/* Link */
+.contacto-link {
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.contacto-link:hover {
+  opacity: 0.7;
+}
+
+/* Títulos */
+.contacto-item h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Mapa */
+.contacto-mapa iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #0002;
+
+  /* Animación al aparecer */
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeZoomIn 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Animación del mapa */
+@keyframes fadeZoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================
+   RESPONSIVE – TABLET (768px – 1024px)
+   Mantener DOS COLUMNAS
+   ========================================================== */
+@media (max-width: 1024px) {
+  .contacto-contenedor {
+    padding: 30px;
+  }
+
+  /* Mantener las dos columnas lado a lado */
+  .contacto-contenedor .contacto-izquierda,
+  .contacto-contenedor .contacto-mapa {
+    flex: 1;
+  }
+
+  .contacto-mapa iframe {
+    height: 300px;
+  }
+
+  .contacto-item h5 {
+    font-size: 18px;
+  }
+
+  .contacto-izquierda p {
+    font-size: 15px;
+  }
+}
+
+/* ==========================================================
+   RESPONSIVE – MÓVIL (≤768px)
+   Convertir a UNA SOLA COLUMNA con todo centrado
+   ========================================================== */
+@media (max-width: 768px) {
+
+  /* Ahora sí se vuelve la columna vertical */
+  .contacto-contenedor {
+    padding: 25px;
+    text-align: center;
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  .contacto-izquierda {
+    margin-bottom: 10px;
+  }
+
+  .contacto-item h5 {
+    font-size: 17px;
+  }
+
+  .contacto-link {
+    font-size: 15px;
+  }
+
+  .contacto-mapa iframe {
+    height: 260px;
+  }
+}
+
+

@@ -9,7 +9,7 @@ function Encabezado() {
       <div className="container">
 
         {/* LOGO */}
-        <Link className="navbar-brand d-flex align-items-center" to="/">
+        <Link className="navbar-brand d-flex align-items-center" to="/nosotros">
           <img 
             src={logoAntares}
             alt=""

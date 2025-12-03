@@ -466,6 +466,67 @@ function Nosotros() {
           </div>
         </div>
       </div>
+
+      {/* ========================= CONTACTO ========================= */}
+      <div className="contacto-padre container my-5">
+        <div className="row gx-5 contacto-contenedor">
+          {/* Columna Izquierda */}
+          <div className="col-12 col-md-6 contacto-izquierda textoPoppins">
+            <h2
+              className="tituloPoppins text-center mb-4"
+              style={{ color: "#00418B" }}
+            >
+              CONTACTO
+            </h2>
+
+            {/* Link principal */}
+            <p className="text-center mb-4">
+              <a
+                href="https://linktr.ee/antaresimpresores"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contacto-link"
+              >
+                https://linktr.ee/antaresimpresores
+              </a>
+            </p>
+
+            {/* Teléfonos */}
+            <div className="contacto-item">
+              <h5 className="tituloPoppins ">ATENCIÓN AL CLIENTE</h5>
+              <p className="text-center">+51 997 687 679</p>
+              <p className="text-center">+51 959 830 447</p>
+              <p className="text-center">+51 959 045 438</p>
+            </div>
+
+            {/* Correo */}
+            <div className="contacto-item mt-4">
+              <h5 className="tituloPoppins text-center">CORREO</h5>
+              <p className="text-center">antares@antaresimpresores.com</p>
+            </div>
+
+            {/* Horarios */}
+            <div className="contacto-item mt-4">
+              <h5 className="tituloPoppins text-center">HORARIOS</h5>
+              <p className="text-center">Lunes a Viernes: 9:00 - 18:00 h</p>
+              <p className="text-center">Sábados: 9:00 - 14:00 h</p>
+            </div>
+          </div>
+
+          {/* Columna Derecha */}
+          <div className="col-12 col-md-6 contacto-mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.20848117330522!2d-71.53339292678488!3d-16.407768515864305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424af90f5d6bd5%3A0x3846da6d49cabba5!2sC.%207%20de%20Junio%20204%2C%20Arequipa%2004001!5e0!3m2!1ses-419!2spe!4v1764732402133!5m2!1ses-419!2spe"
+              width="100%"
+              height="450px"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
