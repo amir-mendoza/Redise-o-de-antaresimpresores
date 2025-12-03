@@ -1,3 +1,4 @@
+/* Sección de talleres */
 .talleres-section {
   background: #f8f9fa;
 }
@@ -72,7 +73,7 @@
   opacity: 0.25;
 }
 
-/* Responsive */
+/* Responsive para tablets y móviles */
 @media (max-width: 991px) {
   .taller-content {
     text-align: left !important;
@@ -82,9 +83,12 @@
     height: 250px;
   }
 
-  .order-lg-1,
-  .order-lg-2 {
-    order: unset !important;
+  .taller-item .row > div:has(.taller-imagen-wrapper) {
+    order: 1 !important;
+  }
+
+  .taller-item .row > div:has(.taller-content) {
+    order: 2 !important;
   }
 }
 
