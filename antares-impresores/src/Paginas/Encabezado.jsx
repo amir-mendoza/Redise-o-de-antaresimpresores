@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import "../css/Encabezado.css";
-import logoAntares from "../img/Encabezado/logo-antares.png";
-
 
 function Encabezado() {
   return (
@@ -11,7 +9,7 @@ function Encabezado() {
         {/* LOGO */}
         <Link className="navbar-brand d-flex align-items-center" to="/nosotros">
           <img 
-            src={logoAntares}
+            src="https://static.wixstatic.com/media/3379ea_f4954b36bad347f2b4748578ec46d36d~mv2.png/v1/fill/w_195,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/GRUPO%20EMPRESARIAL.png"
             alt=""
             className="logo-img"
           />
