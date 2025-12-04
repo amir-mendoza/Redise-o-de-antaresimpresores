@@ -8,26 +8,24 @@ import Ecologicos from "./Paginas/ecologicos";
 import Preguntas from "./Paginas/Preguntas";
 import Productos from "./Paginas/Productos";
 
-
 function App() {
   return (
     <Router>
       <div className="El-Ancho-completo-100">
-
         <Encabezado />
 
-
-        <main className="main-content" style={{ backgroundColor: "#f0f0f0", padding: "20px" }}>
+        <main
+          className="main-content"
+          style={{ backgroundColor: "#f0f0f0", padding: "20px" }}
+        >
           <Routes>
-            <Route path="/" element={<h1>Bienvenido</h1>} />
-            <Route path="/Nosotros" element={<Nosotros />} />
+            <Route path="/" element={<Nosotros />} />
             <Route path="/Talleres" element={<Talleres />} />
             <Route path="/Productos" element={<Productos />} />
             <Route path="/Ecologicos" element={<Ecologicos />} />
             <Route path="/Preguntas" element={<Preguntas />} />
           </Routes>
         </main>
-
 
         <Pie />
       </div>
